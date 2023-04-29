@@ -1,0 +1,25 @@
+import random
+l=["rock","paper","scissors"]
+i=random.randint(0,2)
+y=input("enter rock or paper or scissors: ")
+if l[i]==y:
+    print("tie")
+    print("computer chose",l[i])
+elif l[i]=="rock" and y == "scissors":
+    print("computer won")
+    print("computer chose",l[i])
+elif l[i]=="scissors" and y == "rock":
+    print("player won")
+    print("computer chose",l[i])
+elif l[i]=="rock" and y=="paper":
+    print("player won")
+    print("computer chose",l[i])
+elif l[i]=="paper" and y=="rock":
+    print("computer won")
+    print("computer chose",l[i])
+elif l[i]=="scissors" and y=="paper":
+    print("computer won")
+    print("computer chose",l[i])
+elif l[i]=="paper" and y=="scissors":
+    print("player won")
+    print("computer chose",l[i])
